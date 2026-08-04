@@ -24,15 +24,17 @@ if (yearEl) yearEl.textContent = new Date().getFullYear();
 
 // --- Mapa: arma el embed y el enlace a partir de una sola dirección ---
 // Editá SOLO esta línea si la dirección cambia; se usa para el mapa y el botón "Ver en Google Maps".
-const DIRECCION = "Shirle Nails Studio";
+// --- Mapa: coordenadas exactas de Shirle Nails Studio en Google Maps ---
+const LAT = 10.0544982;
+const LNG = -84.4330419;
+const MAPS_LINK = "https://maps.app.goo.gl/v41dDPr88mftPZ2Y7";
 
 const mapFrame = document.getElementById('mapFrame');
 const mapLink = document.getElementById('mapLink');
-const query = encodeURIComponent(DIRECCION);
 
 if (mapFrame) {
-  mapFrame.src = `https://www.google.com/maps?q=${query}&output=embed`;
+  mapFrame.src = `https://www.google.com/maps?q=${LAT},${LNG}&z=17&output=embed`;
 }
 if (mapLink) {
-  mapLink.href = `https://www.google.com/maps/search/?api=1&query=${query}`;
+  mapLink.href = MAPS_LINK;
 }
