@@ -24,7 +24,7 @@ if (yearEl) yearEl.textContent = new Date().getFullYear();
 
 // --- Mapa: arma el embed y el enlace a partir de una sola dirección ---
 // Editá SOLO esta línea si la dirección cambia; se usa para el mapa y el botón "Ver en Google Maps".
-const DIRECCION = "50 metros este del parque central, contiguo a Farmacia Saba, Costa Rica";
+const DIRECCION = "Shirle Nails Studio";
 
 const mapFrame = document.getElementById('mapFrame');
 const mapLink = document.getElementById('mapLink');
