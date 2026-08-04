@@ -54,5 +54,5 @@ shirle-nails/
 
 ## Autor
 
-Desarrollado por **Kendry** — estudiante de Informática Empresarial,
+Desarrollado por **Kendry Andrey Robles Ávila** — actual estudiante de Informática,
 Universidad Castro Carazo.
