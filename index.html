@@ -3,22 +3,20 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Shirle Nails Studio — Manicura y Pedicura en Costa Rica</title>
+<title>Shirle Nails Studio — Manicura y Pedicura</title>
 <meta name="description" content="Shirle Nails Studio. Esmaltado semipermanente, estructuras en acrígel, acrílicas, resina y Gel X, pedicure spa. Reservá tu cita.">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Petit+Formal+Script&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<div class="grain"></div>
-
 <!-- NAV -->
 <header class="nav" id="nav">
-  <a href="#inicio" class="nav__brand">Shirle <span>Nails</span></a>
+  <a href="#inicio" class="nav__brand">Shirle Nails Studio</a>
   <button class="nav__toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
     <span></span><span></span><span></span>
   </button>
@@ -27,41 +25,25 @@
     <a href="#servicios">Servicios</a>
     <a href="#galeria">Galería</a>
     <a href="#ubicacion">Ubicación</a>
-    <a href="#contacto" class="nav__cta">Reservar cita</a>
+    <a href="#contacto" class="nav__cta">Reservar</a>
   </nav>
 </header>
 
 <!-- HERO -->
 <section class="hero" id="inicio">
-  <div class="hero__ornament hero__ornament--tl" aria-hidden="true"></div>
-  <div class="hero__ornament hero__ornament--br" aria-hidden="true"></div>
-
-  <div class="hero__content">
-    <p class="eyebrow">Estudio de manicura &amp; pedicura</p>
-    <h1 class="hero__title">
-      <span class="script">Shirle</span>
-      <span class="serif">NAILS</span>
-      <span class="tracked">STUDIO</span>
-    </h1>
-    <p class="hero__tagline">Tu estilo comienza en tus manos</p>
-    <div class="hero__actions">
-      <a href="#contacto" class="btn btn--gold">Reservar mi cita</a>
-      <a href="#servicios" class="btn btn--ghost">Ver precios</a>
-    </div>
+  <p class="hero__eyebrow">Estudio de manicura &amp; pedicura</p>
+  <h1 class="hero__title">Shirle Nails Studio</h1>
+  <p class="hero__tagline">Tu estilo comienza en tus manos</p>
+  <div class="hero__actions">
+    <a href="#contacto" class="btn btn--dark">Reservar cita</a>
+    <a href="#servicios" class="btn btn--outline">Ver precios</a>
   </div>
-
-  <div class="hero__frame">
-    <div class="hero__photo" style="background-image:url('assets/img/hero-placeholder.jpg')"></div>
-    <div class="hero__frame-line"></div>
-  </div>
+  <div class="hero__photo" style="background-image:url('assets/img/hero-placeholder.jpg')"></div>
 </section>
 
 <!-- SOBRE MI -->
 <section class="about" id="sobre-mi">
-  <div class="about__image">
-    <div class="about__photo" style="background-image:url('assets/img/perfil-placeholder.jpg')"></div>
-    <div class="about__ring" aria-hidden="true"></div>
-  </div>
+  <div class="about__photo" style="background-image:url('assets/img/perfil-placeholder.jpg')"></div>
   <div class="about__text">
     <p class="eyebrow">Sobre mí</p>
     <h2>Hola, soy Shirle</h2>
@@ -89,100 +71,54 @@
   <p class="eyebrow center">Precios y servicios</p>
   <h2 class="section-title center">Lista de precios</h2>
 
-  <div class="price-card">
+  <div class="price-grid">
 
-    <div class="price-row">
-      <div class="price-row__icon">
-        <svg viewBox="0 0 48 48" aria-hidden="true"><use href="#icon-esmalte"></use></svg>
-      </div>
-      <div class="price-row__text">
-        <span class="price-row__name">Esmaltado semipermanente</span>
-        <span class="price-row__note">básico</span>
-      </div>
-      <span class="price-row__dots"></span>
-      <span class="price-pill">₡10.000</span>
-    </div>
+    <article class="price-card">
+      <h3>Esmaltado semipermanente</h3>
+      <p class="price-card__note">básico</p>
+      <span class="price-card__line"></span>
+      <span class="price-card__amount">₡10.000</span>
+    </article>
 
-    <div class="price-row">
-      <div class="price-row__icon">
-        <svg viewBox="0 0 48 48" aria-hidden="true"><use href="#icon-rubber"></use></svg>
-      </div>
-      <div class="price-row__text">
-        <span class="price-row__name">Rubber base</span>
-      </div>
-      <span class="price-row__dots"></span>
-      <span class="price-pill">₡15.000</span>
-    </div>
+    <article class="price-card">
+      <h3>Rubber base</h3>
+      <span class="price-card__line"></span>
+      <span class="price-card__amount">₡15.000</span>
+    </article>
 
-    <div class="price-block">
-      <div class="price-block__head">
-        <span class="price-block__tag">Estructuras</span>
-        <ul class="price-block__items">
-          <li>Acrígel</li>
-          <li>Acrílicas</li>
-          <li>Resina</li>
-          <li>Gel X</li>
-        </ul>
-      </div>
-      <div class="price-block__icon">
-        <svg viewBox="0 0 48 48" aria-hidden="true"><use href="#icon-estructura"></use></svg>
-      </div>
-      <div class="price-block__list">
-        <div class="price-block__row">
-          <span>Largo 1 y 2</span><span class="price-row__dots"></span><span class="price-pill">₡20.000</span>
-        </div>
-        <div class="price-block__row">
-          <span>Largo 3 y 4</span><span class="price-row__dots"></span><span class="price-pill">₡24.000</span>
-        </div>
-        <div class="price-block__row">
-          <span>Largo 5 y 6</span><span class="price-row__dots"></span><span class="price-pill">₡26.000</span>
-        </div>
-      </div>
-    </div>
+    <article class="price-card">
+      <h3>Pedicure spa</h3>
+      <span class="price-card__line"></span>
+      <span class="price-card__amount">₡22.000</span>
+    </article>
 
-    <div class="price-row">
-      <div class="price-row__icon">
-        <svg viewBox="0 0 48 48" aria-hidden="true"><use href="#icon-pedicure"></use></svg>
+    <article class="price-card price-card--wide">
+      <h3>Estructuras</h3>
+      <p class="price-card__note">acrígel · acrílicas · resina · gel x</p>
+      <div class="price-card__sublist">
+        <div><span>Largo 1 y 2</span><span class="price-card__line"></span><span class="price-card__amount">₡20.000</span></div>
+        <div><span>Largo 3 y 4</span><span class="price-card__line"></span><span class="price-card__amount">₡24.000</span></div>
+        <div><span>Largo 5 y 6</span><span class="price-card__line"></span><span class="price-card__amount">₡26.000</span></div>
       </div>
-      <div class="price-row__text">
-        <span class="price-row__name">Pedicure Spa</span>
-      </div>
-      <span class="price-row__dots"></span>
-      <span class="price-pill">₡22.000</span>
-    </div>
+    </article>
 
-    <div class="price-row price-row--split">
-      <div class="price-row__icon">
-        <svg viewBox="0 0 48 48" aria-hidden="true"><use href="#icon-relleno"></use></svg>
+    <article class="price-card">
+      <h3>Rellenos</h3>
+      <div class="price-card__sublist price-card__sublist--tight">
+        <div><span class="price-card__note">básico</span><span class="price-card__line"></span><span class="price-card__amount">₡13.000</span></div>
+        <div><span class="price-card__note">elaborados</span><span class="price-card__line"></span><span class="price-card__amount">₡15.000</span></div>
       </div>
-      <div class="price-row__text">
-        <span class="price-row__name">Rellenos</span>
-      </div>
-      <div class="price-row__submenu">
-        <div><span class="price-row__note">básico</span><span class="price-pill price-pill--sm">₡13.000</span></div>
-        <div><span class="price-row__note">elaborados</span><span class="price-pill price-pill--sm">₡15.000</span></div>
-      </div>
-    </div>
+    </article>
 
-    <div class="price-note">
-      <span class="price-note__icon">!</span>
-      <p><strong>El faltante de uñas</strong> se cobra adicional.</p>
-    </div>
-
-    <div class="price-row price-row--last">
-      <div class="price-row__icon">
-        <svg viewBox="0 0 48 48" aria-hidden="true"><use href="#icon-retiro"></use></svg>
-      </div>
-      <div class="price-row__text">
-        <span class="price-row__name">Retiro de producto</span>
-      </div>
-      <span class="price-row__dots"></span>
-      <span class="price-pill">₡5.000</span>
-    </div>
+    <article class="price-card">
+      <h3>Retiro de producto</h3>
+      <span class="price-card__line"></span>
+      <span class="price-card__amount">₡5.000</span>
+    </article>
 
   </div>
 
-  <p class="price-footer">Precios sujetos a cambio según diseño y complejidad del trabajo.</p>
+  <p class="price-footer">El faltante de uñas se cobra adicional. Precios sujetos a cambio según diseño y complejidad del trabajo.</p>
 </section>
 
 <!-- GALERIA -->
@@ -214,7 +150,7 @@
       Shirle Nails Studio
     </address>
     <p class="location__note">Trabajo únicamente con cita previa — escribime para coordinar día y hora.</p>
-    <a class="btn btn--gold" id="mapLink" href="#" target="_blank" rel="noopener">Ver en Google Maps</a>
+    <a class="btn btn--dark" id="mapLink" href="#" target="_blank" rel="noopener">Ver en Google Maps</a>
   </div>
   <div class="location__map">
     <iframe
@@ -229,66 +165,18 @@
 
 <!-- CONTACTO / FOOTER -->
 <footer class="contact" id="contacto">
-  <div class="contact__ornament" aria-hidden="true"></div>
   <p class="eyebrow center">Reservá tu cita</p>
   <h2 class="section-title center">Escribime</h2>
   <p class="contact__intro">Coordinemos día, hora y el servicio que querés.</p>
 
   <div class="contact__actions">
-    <a href="https://wa.me/50600000000" class="btn btn--gold" target="_blank" rel="noopener">
-      WhatsApp
-    </a>
-    <a href="https://instagram.com/shirlenailsstudio" class="btn btn--ghost" target="_blank" rel="noopener">
-      Instagram
-    </a>
+    <a href="https://wa.me/50600000000" class="btn btn--dark" target="_blank" rel="noopener">WhatsApp</a>
+    <a href="https://instagram.com/shirlenailsstudio" class="btn btn--outline" target="_blank" rel="noopener">Instagram</a>
   </div>
 
-  <p class="contact__signature script">Tu estilo comienza en tus manos <span class="heart">♥</span></p>
+  <p class="contact__signature">Tu estilo comienza en tus manos</p>
   <p class="contact__copy">© <span id="year"></span> Shirle Nails Studio</p>
 </footer>
-
-<!-- SVG ICON SPRITE (line-art a juego con la referencia) -->
-<svg width="0" height="0" style="position:absolute" aria-hidden="true">
-  <defs>
-    <g id="icon-esmalte">
-      <rect x="16" y="18" width="12" height="20" rx="3"/>
-      <path d="M19 18 V12 h6 v6"/>
-      <path d="M22 8 l6 4"/>
-      <line x1="16" y1="26" x2="28" y2="26"/>
-    </g>
-    <g id="icon-rubber">
-      <rect x="16" y="14" width="14" height="22" rx="3"/>
-      <path d="M20 14 v-5 h6 v5"/>
-      <rect x="19" y="21" width="8" height="8" rx="1"/>
-    </g>
-    <g id="icon-estructura">
-      <path d="M14 34 C14 22 18 12 24 8 C30 12 34 22 34 34" />
-      <path d="M18 33 C18 24 20 16 24 12"/>
-      <path d="M30 8 l8 6 -3 3 -7 -5 z"/>
-    </g>
-    <g id="icon-pedicure">
-      <ellipse cx="24" cy="28" rx="12" ry="8"/>
-      <path d="M14 28 C14 20 16 14 18 10"/>
-      <path d="M34 28 C34 20 32 14 30 10"/>
-      <circle cx="18" cy="12" r="2"/>
-      <circle cx="23" cy="9" r="2"/>
-      <circle cx="28" cy="10" r="2"/>
-      <circle cx="32" cy="14" r="2"/>
-    </g>
-    <g id="icon-relleno">
-      <path d="M16 34 C16 22 19 12 24 9 C29 12 32 22 32 34"/>
-      <path d="M14 34 h20"/>
-      <path d="M20 20 q4 -3 8 0"/>
-    </g>
-    <g id="icon-retiro">
-      <path d="M16 16 h16 l-1.5 19 a2 2 0 0 1 -2 2 h-9 a2 2 0 0 1 -2 -2 z"/>
-      <path d="M14 16 h20"/>
-      <path d="M20 16 v-3 a1 1 0 0 1 1 -1 h6 a1 1 0 0 1 1 1 v3"/>
-      <line x1="21" y1="20" x2="21" y2="31"/>
-      <line x1="27" y1="20" x2="27" y2="31"/>
-    </g>
-  </defs>
-</svg>
 
 <script src="js/script.js"></script>
 </body>
